@@ -2,9 +2,9 @@ main:
   - title: "Inicio"
     url: /
   - title: "Artículos"
-    url: /articulos/
+    url: /year-archive/
   - title: "Categorías"
-    url: /categorias/
+    url: /categories/
   - title: "Etiquetas"
     url: /tags/
   - title: "Buscador"
