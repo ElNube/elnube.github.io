@@ -15,10 +15,10 @@ Mi apodo es Nube o ElNube, actualmente estudio ingenieria civil en informatica.
 Esta sera mi pagina web personal para guardar mis apuntes e ideas para hacer a futuro.
 
 ## Material de apoyo
-Estos como material de apoyo para aquellos que quieran aprender:
+Esto es algo de material de apoyo para aquellos que quieran aprender:
 - [Calculo Integral YT](https://www.youtube.com/playlist?list=PLzBJV-lsTbLZdaUYYy50Ha5EiiBt2dWU2)
 
-## Experiencia
+## Cosas que he estudiado y pienso hacer algun post sobre ello
 - Algoritmos básicos en C.
 - Estructuras de datos:
     Cola (fila)
