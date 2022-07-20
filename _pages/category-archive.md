@@ -1,6 +1,6 @@
 ---
 title: "Artículos por categoría"
-layout: categories
-permalink: /categories/
+layout: categorias
+permalink: /categorias/
 author_profile: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Artículos por año"
-permalink: /year-archive/
+permalink: /articulos/
 layout: posts
 author_profile: true
 ---
