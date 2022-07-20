@@ -17,7 +17,7 @@
 }
 /*
 .btn {
-  /* default */
+  
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
@@ -35,10 +35,9 @@
   }
 
   .icon + .hidden {
-    margin-left: -0.5em; /* override for hidden text*/
+    margin-left: -0.5em; 
   }
 
-  /* button colors */
   $buttoncolors:
   (primary, $primary-color),
   (inverse, #fff),
@@ -72,7 +71,6 @@
     }
   }
 
-  /* fills width of parent container */
   &--block {
     display: block;
     width: 100%;
@@ -82,7 +80,6 @@
     }
   }
 
-  /* disabled */
   &--disabled {
     pointer-events: none;
     cursor: not-allowed;
@@ -91,17 +88,14 @@
     opacity: 0.65;
   }
 
-  /* extra large button */
   &--x-large {
     font-size: $type-size-4;
   }
 
-  /* large button */
   &--large {
     font-size: $type-size-5;
   }
 
-  /* small button */
   &--small {
     font-size: $type-size-7;
   }
