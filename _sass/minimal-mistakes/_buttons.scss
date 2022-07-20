@@ -7,6 +7,16 @@
    ========================================================================== */
 
 .btn {
+    background: #72CAAF;
+}
+
+.btn a {
+    background: linear-gradient(145deg, #67b69e, #7ad8bb);
+    box-shadow: 6px 6px 20px -1px #61ac95,
+        -6px -6px 20px -1px #83e8c9;
+}
+/*
+.btn {
   /* default */
   display: inline-block;
   margin-bottom: 0.25em;
@@ -96,3 +106,4 @@
     font-size: $type-size-7;
   }
 }
+*/
