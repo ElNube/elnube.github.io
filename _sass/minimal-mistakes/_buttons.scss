@@ -7,13 +7,13 @@
    ========================================================================== */
 
 .btn {
-    background: #72CAAF;
+    background: $primary-color;
 }
 
 .btn a {
-    background: linear-gradient(145deg, #67b69e, #7ad8bb);
-    box-shadow: 6px 6px 20px -1px #61ac95,
-        -6px -6px 20px -1px #83e8c9;
+    background: linear-gradient(145deg, mix($primary-color, rgb(0, 0, 0)), $primary-color);
+    box-shadow: 6px 6px 20px -1px mix($primary-color, rgb(0, 0, 0)),
+        -6px -6px 20px -1px mix($primary-color, rgb(0, 0, 0));
 }
 /*
 .btn {
