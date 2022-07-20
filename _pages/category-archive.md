@@ -1,6 +1,6 @@
 ---
 title: "Artículos por categoría"
-layout: categorias
+layout: categories
 permalink: /categories/
 author_profile: true
 ---
