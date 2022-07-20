@@ -106,7 +106,7 @@ author:
   avatar           : "/assets/images/avatar.png"
   bio              : "Estudiante de ingenieria civil en informatica"
   uri              :
-  home             : "Chile" # null (default), "absolute or relative url to link to author home"
+  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
