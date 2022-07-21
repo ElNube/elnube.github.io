@@ -72,7 +72,6 @@ La documentación de codigo es explicar el funcionamiento de un fragmento de cod
 Multiples lineas
 */
 ~~~
----
 ## Identación
 La identacion es aquello que nos permite tener un mayor orden visual sobre el codigo, permitiendonos identificar mejor hasta donde engloba una llave, corchete o parentesis.
 
