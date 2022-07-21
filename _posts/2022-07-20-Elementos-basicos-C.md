@@ -5,7 +5,7 @@ excerpt: "Pequeño apunte en markdown sobre el lenguaje C." # resumen
 date: 2022-07-20 # fecha
 classes: wide #ni idea que es esto
 header: #ni idea que es esto
-  teaser: /assets/images/2022-07-20-Elementos-basicos-C/C_logo.png
+  teaser: /assets/images/2022-07-20-Elementos-basicos-C/C_Logo.png
   teaser_home_page: true
 categories: #estas son las categorias
   - Lenguaje de programación
@@ -14,7 +14,9 @@ tags: #estos son los tags
   - Sintaxis
   - Documentación
 ---
-
+<p align="center">
+<img src="/assets/images/2022-07-20-Elementos-basicos-C/C_Logo.png">
+</p>
 
 ## Librerías basicas
 Las librerías son palabras reservadas y funciones. Que nos sirven como base o ayuda en nuestro propio codigo.
