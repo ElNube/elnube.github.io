@@ -5,12 +5,14 @@ excerpt: "Pequeño apunte en markdown sobre el lenguaje C." # resumen
 date: 2022-07-20 # fecha
 classes: wide #ni idea que es esto
 header: #ni idea que es esto
-  teaser: /assets/images/2022-07-19-base-post/header.png
+  teaser: /assets/images/2022-07-20-Elementos-basicos-C/C_logo.png
   teaser_home_page: true
 categories: #estas son las categorias
-  - Lenguaje C
+  - Lenguaje de programación
 tags: #estos son los tags
-  - Aprender
+  - C
+  - Sintaxis
+  - Documentación
 ---
 
 
@@ -26,16 +28,175 @@ Para incluir una librería en tu codigo:
 #include <stdio.h>
 /*Funcion principal*/
 int main(){
-  printf("\nHola Mundo"); //Mostrar información
-  int a; // Iniciar una variable entera
-  scanf("%d", &a); //Escanear el teclado y asignarlo a la variable 'a'
-  printf("\n%d", a); //Mostrar el valor de la variable
-  return 0; //
+  int a;                // Declarar una variable entera
+  fflush(stdin);        // Limpia la entrada de datos para evitar el desbordamiento de datos
+  scanf("%d", &a);      // Escanear el teclado y asignarlo a la variable 'a'
+  printf("\n%d", a);    // Mostrar el valor de la variable
+  return 0;
 }
 ~~~
-Esta libreria nos permite usando la palabra reservada *printf("el mostrar información en consola");*
-usualmente se usa para mostrar log y errores. Aunque tambien se usa bastante para hacer programas básicos 
-cuando uno esta aprendiendo el lenguaje.
+### Librería matematíca.
+~~~
+#include <stdio.h>
+#include <math.h>
+/*Funcion principal*/
+int main(){
+  int a = 3;            // Declarar y asigna una variable
+  a = pow(a,2);         // Eleva la variable 'a' al cuadrado [a^2]
+  printf("\n%d", a);    // Mostrar el valor de la variable
+  
+  a = sqrt(a);          // Raiz cuadrada de a 
+  printf("\n%d", a);    // Mostrar el valor de la variable
+  return 0;
+}
+~~~
+### Librería estándar de propósito general.
+~~~
+#include <stdio.h>
+#include <stdlib.h>
+/*Funcion principal*/
+int main(){
+  int min = 0, max = 10, resultado;       // Declarar y asigna las variables
+  resultado = rand() % (max-min+1) + min; // Genera un numero seudoaletoreo entre min y max incluyendolos
+  printf("\n%d", resultado);              // Mostrar el valor de la variable resultado
+  system("pause");                        // Pausa la consola hasta que el usuario aprete cualquier tecla
+  return 0;
+}
+~~~
+## Documentación de codigo
+La documentación de codigo es explicar el funcionamiento de un fragmento de codigo con comentarios
+~~~
+// Una linea
 
+/*
+Multiples lineas
+*/
+~~~
+---
+## Identación
+La identacion es aquello que nos permite tener un mayor orden visual sobre el codigo, permitiendonos identificar mejor hasta donde engloba una llave, corchete o parentesis.
+
+SIN
+~~~
+#include <stdio.h>
+
+int main(){
+int n = 2;
+if (n == 1)
+{
+printf("\nHola");  
+}
+else if (n == 2)
+{
+printf("\nChao");  
+}
+else
+{
+printf("\n...");
+}
+}
+~~~
+CON
+~~~
+#include <stdio.h>
+
+int main(){
+  int n = 2;
+  if (n == 1)
+  {
+    printf("\nHola");  
+  }
+  else if (n == 2)
+  {
+    printf("\nChao");  
+  }
+  else
+  {
+    printf("\n...");
+  }
+}
+~~~
+## Tipos de datos
+| TIPO             | FORMATO    | DECLARACIÓN | EJEMPLO| MOSTRAR |ESCANEAR|
+|-------------------|---------|---------------|-----------------|-------------------|-------------------|
+| Entero | %d | int a; | int a = 10; | *printf("%d", a);* | *scanf("%d", &a);* |
+| Decimal | %f | float b; | float b = 3.14; | *printf("%f", b);* | *scanf("%f", &b);* |
+| Caracter | %c | char c; | char c = 'A'; | *printf("%c", c);* | *scanf("%c", &c);* |
+| Cadena | %s | char d[size+1]; | char d[5] = "Hola"; | *printf("%s", d);* | *scanf("%4d", c);* |
+## Control de flujo
+### Condicional
+IF-ELSE
+~~~
+if (condición)
+{
+  //Codigo SI se cumple la condición
+}
+else
+{
+  //Codigo NO se cumple la condición
+}
+~~~
+SWITCH
+~~~
+switch(variable){
+  case 1: // Si la variable es 1
+    break;
+  case "hola": // Si la variable es hola
+    break;
+  default:
+    break;
+}
+
+~~~
+### Bucles
+WHILE
+~~~
+while(condición)
+{
+  //Repetir codigo de manera indeterminada mientras se cumpla la condición
+}
+~~~
+FOR
+~~~
+for(int i = 0; condición; i++)
+{
+  //Repetir codigo de manera determinada mientras se cumpla la condición
+}
+~~~
+DO-WHILE Lo uso normalmente para validar un dato que es ingresa a la fuerza. Ej: quiero ingresar un numero positivo, entonces la condicion es variable < 0
+~~~
+do
+{
+  //Repetir codigo de manera indeterminada mientras se cumpla la condición
+} while(condición);
+~~~
+## Array o Vectores
+Es una estructura de dato no dinamica (que tiene un tamaño determinado y finito)
+
+Unidimensional **a[n]**
+| 0 | 1 | ... | n-2  | n-1  |
+:---:|:---:|:---:|:---:|:---:|
+~~~
+int main(){
+  int a[n];
+  a[0] = 10;    // Posicion inicial
+  a[n-1] = 20;  // Posicion final
+}
+~~~
+
+Bidimensional **b[i][j]**
+| 0, 0 | 0, 1 |... | 0, j-2  | 0, j-1  |
+:---:|:---:|:---:|:---:|:---:|
+| 1, 0 | 1, 1 | ... | 1, j-2  | 1, j-1  |
+| ... | ... | ... | ...  | ...  |
+| i-2, 0 | i-2, 1 | ... | i-2, j-2 | i-2, j-1|
+| i-1, 0 | i-1, 1 | ... | i-1, j-2 | i-1, j-1|
+~~~
+int main(){
+  int a[i][j];
+  a[0][0] = 10;    // Posicion inicial
+  a[i-1][j-1] = 20;  // Posicion final
+}
+~~~
 
 [Documentación C](https://devdocs.io/c/)
