@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: splash
 title: Elementos basicos en C
 excerpt: "Pequeño apunte en markdown sobre el lenguaje C." # resumen
 date: 2022-07-20 # fecha
@@ -118,6 +118,8 @@ int main(){
 }
 ~~~
 ## Tipos de datos
+~~~
+
 | TIPO             | FORMATO    | DECLARACIÓN | EJEMPLO| MOSTRAR |ESCANEAR|
 |-------------------|---------|---------------|-----------------|-------------------|-------------------|
 | Entero | %d | int a; | int a = 10; | *printf("%d", a);* | *scanf("%d", &a);* |
@@ -125,6 +127,7 @@ int main(){
 | Caracter | %c | char c; | char c = 'A'; | *printf("%c", c);* | *scanf("%c", &c);* |
 | Cadena | %s | char d[size+1]; | char d[5] = "Hola"; | *printf("%s", d);* | *scanf("%4d", c);* |
 ## Control de flujo
+~~~
 ### Condicional
 IF-ELSE
 ~~~
